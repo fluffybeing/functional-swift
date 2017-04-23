@@ -104,3 +104,6 @@ func inRange(ownPosition: Position, target: Position, friendly: Position, range:
     
     return resultRegion(target)
 }
+
+// Identifying correct type is core of functional programming
+// In above example, Region type made everything simple

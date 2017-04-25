@@ -108,6 +108,6 @@ func quickSort(array: [Int]) -> [Int] {
     let lesser = array.filter { $0 < pivot }
     let greater = array.filter { $0 >= pivot }
     
-    return quickSort(array: lesser) + Array([pivot]) + quickSort(array: greater)
+    return quickSort(array: lesser) as [Int] + [pivot] + quickSort(array: greater)
     
 }
